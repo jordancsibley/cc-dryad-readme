@@ -65,10 +65,32 @@ To make a [MARINe Data Request](https://marine.ucsc.edu/explore-the-data/contact
 The data folder, `ESDM_outputs_data` contains 4 folders that hold the results of the ensemble species distribution models (ESDM): 
 
 - `change_species_rasters/`: Change detection map that is a result of the future suitability raster minus the current suitability raster. 
-- `cumulative_species_rasters/`: 
+- `cumulative_species_rasters/`: Accumulation of the current, future, and then change rasters to indentify average areas of loss and gain along coast
 - `current_species_rasters/`: Habitat suitability raster files that are the result of running the ESDM with the environmental variables from 2000-2010
 - `projected_species_rasters/`: Habitat suitability Raster files that are the result of running the ESDM with the projected environmental variables from 2050-2060
 
+
+Each file contains the name of the intertidal species within the file name. Here is the data structure: 
+
+```
+ESDM_outputs_data
+|
+├── change_species_rasters/
+
+|
+├── cumulative_species_rasters/
+
+|
+├── current_species_rasters/
+
+|
+├── projected_species_rasters/ 
+
+
+
+
+
+```
 
 
 ## METHODOLOGICAL INFORMATION
